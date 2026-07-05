@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudhir's Shop | Premium Products</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 20px 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+            color: #2c3e50;
+        }
+        .cart-icon {
+            font-weight: 600;
+            cursor: pointer;
+            color: #007bff;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .welcome-section {
+            margin-bottom: 40px;
+        }
+        .welcome-section h2 {
+            font-size: 32px;
+            color: #2c3e50;
+        }
+        .welcome-section p {
+            color: #666;
+            font-size: 18px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 30px;
+        }
+        .product-card {
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e1e4e8;
+            transition: transform 0.2s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #28a745;
+            margin: 15px 0;
+        }
+        .add-to-cart-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s;
+        }
+        .add-to-cart-btn:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 24px;
+            background-color: #2c3e50;
+            color: #ffffff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sudhir's Shop</h1>
+        <div class="cart-icon">
+            🛒 Cart (0)
+        </div>
+    </header>
+
+    <main>
+        <div class="welcome-section">
+            <h2>Welcome to Our Store</h2>
+            <p>Browse our exclusive collection of high-quality products. Online ordering integration is currently in progress.</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <h3>Premium Item One</h3>
+                <p>High-quality description of the product goes here.</p>
+                <div class="price">₹999.00</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <h3>Premium Item Two</h3>
+                <p>High-quality description of the product goes here.</p>
+                <div class="price">₹1,499.00</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <h3>Premium Item Three</h3>
+                <p>High-quality description of the product goes here.</p>
+                <div class="price">₹499.00</div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sudhir's Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
